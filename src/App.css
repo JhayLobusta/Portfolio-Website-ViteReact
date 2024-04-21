@@ -1,118 +1,33 @@
-::selection {
-  background-color: #a2f5a9; 
-  color: #000; }
 
-::-moz-selection {
-  background-color: #a2f5a9;
-  color: #000;
-}
-
-.circle-back{
+.indicator {
+  width: 25px; 
+  height: 40px;
+  border: 2px solid #075985;
+  border-radius: 50px; 
   position: relative;
-  width: 38rem;
-  height: 38rem;
-  border-radius: 20.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
-.circle-front{
+.indicator:before {
+  content: ""; 
   position: absolute;
-  width: 30rem;
-  height: 30rem;
-  border-radius: 20.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hero-image {
-  width: 24.3125rem;
-  height: 45.0625rem;
-  transition-duration: 500ms;
-}
-.hero-image:hover {
-  width: 24.9375rem;
-  height: 46.1875rem;
-  transition-duration: 500ms;
-}
- 
-.circle{
-  width: 20rem;
-  height: 20rem;
-  border-radius: 10rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-image-small-2 {
-  transform: scale(60%) translate(65%, -7%);
-  width: 24.3125rem;
-  height: 45.0625rem;
-  z-index: 3;
-  flex: 1;
-  transition-duration: 300ms;
-}
-.hero-image-small-2:hover {
-  width: 24.9375rem;
-  height: 46.1875rem;
-  transition-duration: 300ms;
-}
-.hero-image-small {
-  flex: 1;
-  transform: scale(60%) translate(-65%, 7%);
-  width: 24.3125rem;
-  height: 45.0625rem;
-  z-index: 4;
-  transition-duration: 300ms;
-}
-.hero-image-small:hover {
-  width: 24.9375rem;
-  height: 46.1875rem;
-  transition-duration: 300ms;
-}
-.circle-back-small{
-  width: 33rem;
-  height: 33rem;
-  border-radius: 17rem;
-  z-index: 1;
-}
-
-.circle-front-small{
-  width: 25rem;
-  height: 25rem;
-  border-radius: 15rem;
-  position: absolute;
-  z-index: 2;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-
-/* .button-container {
-  position: relative;
-  display: inline-block;
-} */
-
-.overlay {
-  /* position: absolute; */
-  top: 0;
+  width: 8px; 
+  height: 8px;
+  background: #075985; 
+  margin: auto;
+  left: 0; 
   right: 0;
-  left: 0;
-  bottom: 0;
-  font-size: 1rem;
-  border-radius: 0.5625rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: normal;
+  top: 30px; 
+  border-radius: 50%;
+  animation: animate 1s linear infinite; 
 }
-
+@keyframes animate {
+  0% {
+      opacity: 1; top: 5px;
+  }
+  100% {
+      opacity: 0; top: 30px;
+      transform: scale(0.8);
+  }
+}
 
 @media screen and (max-width: 768px) {
   .hero-container {

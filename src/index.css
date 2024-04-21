@@ -5,10 +5,8 @@
 
 :root {
     font-family: 'Rubik', sans-serif;
-  
     color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #f8fafc;
+    color: #CCD6F6;
   
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -23,11 +21,76 @@
     scroll-behavior: smooth;
   }
 
+  body{
+    min-height: 100vh;
+    overflow: hidden;
+    /* background-color: #171717;
+    background-image: linear-gradient(to right, #2528362e 1px, transparent 1px)
+    linear-gradient(to bottom, #2528362e 1px, transparent 1px);
+    background-size: 5px 5px; */
+  }
+
   ::selection {
-    background-color: #a2f5a9; 
-    color: #000; }
+    background-color: #1e293b;
+    color: #8892B0; 
+  }
   
   ::-moz-selection {
-    background-color: #a2f5a9;
-    color: #000;
+    background-color: #1e293b;
+    color: #8892B0;
   }
+  p{
+    color: #8892B0;
+  }
+  a{
+    color: #8892B0;
+  }
+  h1{
+    font-family: 'Sanchez', sans-serif;
+  }
+  a:hover path {
+    fill: #93c5fd;
+}
+
+#cursor
+{
+  position: fixed;
+  /* z-index: 2; */
+  opacity: 11%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s;
+  pointer-events: none;
+  filter: drop-shadow(0 0 65px #c084fc) drop-shadow(0 0 85px #c084fc);
+  border-top: solid 1px rgba(255, 255, 255, 1);
+}
+
+#cursor::before
+{
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 100vh;
+  height: 100vh;
+  background-image: radial-gradient(circle farthest-side at 500px 50px, #c084fc 0%, rgba(172, 0, 129, 0) 90%);
+}
+
+body:hover #cursor
+{
+  transform: translate(-1px, 5px) rotate(15deg) scale(1);
+} 
+
+.element
+{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 20%;
+  color: #a855f7;
+  border-radius: 25%;
+  pointer-events: none;
+  width: 5px;
+  height: 5px;
+  font-size: 1.75em;
+  transition: 1.3s;
+  filter: drop-shadow(0 0 2px #581c87) drop-shadow(0 0 5px #3b0764) hue-rotate(0deg);
+}
