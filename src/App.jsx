@@ -72,7 +72,7 @@ const App = () => {
       
       <div className='px-10 max-w-screen-xl md:mx-12 lg:px-0 lg:m-auto relative'>
       <div className='right-0 absolute '>
-    <nav className="flex justify-end items-center mt-16">
+    <nav className="flex justify-end items-center mt-12">
   
     <a href='#'>
   <div className="flex items-center text-left">
@@ -105,15 +105,15 @@ const App = () => {
   <div className="relative flex flex-col flex-1">
     <h1 className="text-6xl font-regular mb-0 leading-tight text-green-300">Hi,</h1>
     <h1 className="text-6xl font-regular mb-0 leading-tight text-sky-200">I design & build <a className='italic text-sky-400 hover:text-sky-500 transition-all ease-in-out duration-300'>apps.</a></h1>
-    <p className="mt-8 text-md leading-normal text-slate-400">I'm James Russel Lobusta, a versatile graphic designer and occasional</p>
-    <p className="mt-1 text-md leading-normal text-slate-400">mobile & web developer — creating visually stunning designs and</p>
-    <p className="mt-1 text-md leading-normal text-slate-400">functional digital experiences.</p>
+    <p className="mt-8 text-md leading-normal text-slate-400/85">I'm James Russel Lobusta — designer by day, developer by night,</p>
+    <p className="mt-1 text-md leading-normal text-slate-400/85">solving problems with creativity, code, and way too much coffee,</p>
+    <p className="mt-1 text-md leading-normal text-slate-400/85">all while trying to keep my sanity intact.</p>
     <div className='mt-20'>
     {/* <button type="button" class="text-green-300 bg-slate-800 hover:text-sky-300 focus:outline-none font-normal rounded-full text-sm px-7 hover:px-10 transition-all duration-200 py-3 text-center inline-flex items-center me-2">
 Explore Portfolio
 </button> */}
 <button type="button" class="text-white bg-gradient-to-r text-center inline-flex items-center font-medium transition-all ease-in-out duration-200 from-purple-600 via-purple-700 to-purple-800 hover:px-12 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 rounded-full text-sm px-8 py-3.5 me-2">
-Explore Portfolio<svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+Look Around<svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
 </svg></button>
 
@@ -121,15 +121,6 @@ Explore Portfolio<svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
   </div>
 </section>
 
-{/* <section className="relative">
-  <div className="flex flex-col  px-10 max-w-screen-xl md:mx-12 lg:px-0 lg:m-auto">
-    <h1 className="text-4xl font-regular mb-0 leading-tight text-green-300">01</h1>
-    <h1 className="text-4xl font-regular mb-0 leading-tight text-sky-100">About me.</h1>
-    <p className="mt-8 text-md leading-normal text-cyan-600">I'm James Russel Lobusta, a versatile graphic designer and occasional</p>
-    <p className="mt-1 text-md leading-normal text-cyan-600">mobile-web developer. Currently creating visually stunning</p>
-    <p className="mt-1 text-md leading-normal text-cyan-600"> designs and functional digital experiences.</p>
-  </div>
-</section> */}
 
     </div>
     </>

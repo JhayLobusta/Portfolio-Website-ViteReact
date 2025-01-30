@@ -4,7 +4,9 @@
 
 
 :root {
-    font-family: 'Rubik', sans-serif;
+  font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13.5px;
     color-scheme: light dark;
     color: #CCD6F6;
   
@@ -72,7 +74,7 @@
   border-radius: 50%;
   width: 100vh;
   height: 100vh;
-  background-image: radial-gradient(circle farthest-side at 500px 50px, #c084fc 0%, rgba(172, 0, 129, 0) 90%);
+  background-image: radial-gradient(circle farthest-side at 500px 50px, #c084fc 0%, rgba(172, 0, 129, 0) 0%);
 }
 
 body:hover #cursor
