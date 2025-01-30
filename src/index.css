@@ -25,9 +25,9 @@
 
   body{
     min-height: 100vh;
-    overflow: hidden;
-    /* background-color: #171717;
-    background-image: linear-gradient(to right, #2528362e 1px, transparent 1px)
+    overflow: auto;
+    /* background-color: #111111; */
+    /* background-image: linear-gradient(to right, #2528362e 1px, transparent 1px)
     linear-gradient(to bottom, #2528362e 1px, transparent 1px);
     background-size: 5px 5px; */
   }
